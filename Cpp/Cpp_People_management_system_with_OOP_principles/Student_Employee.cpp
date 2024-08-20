@@ -23,7 +23,7 @@ Student_Employee::~Student_Employee()
 {
 }
 
-ostream& operator<<(std::ostream& out, const Student_Employee& student_employee)
+ostream &operator <<(std::ostream &out, const Student_Employee &student_employee)
 {
     out << "Name: " << student_employee.first_name + " " + student_employee.last_name << "\n" <<
             "Gender: " << student_employee.gender << "\n" <<

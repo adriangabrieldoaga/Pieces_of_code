@@ -25,13 +25,13 @@ int main()
                                                    4000, "XYZ", "Engineering", "Electronics engineer intern", 3500));
 
     // Displaying information of all people
-    for (const auto& person : people) {
+    for (const auto &person: people) {
         person->display_Info();
     }
 
 /*
     // Explicitly casting to the correct type and using the overloaded << operator
-    for (const auto& person : people)
+    for (const auto &person: people)
 {
     // We check if the person is part of the Student_Employee class first, because it's also part of the Student and Employee classes, but we want the Student_Employee implementation
     if (auto student_employee = dynamic_cast<Student_Employee*>(person.get()))

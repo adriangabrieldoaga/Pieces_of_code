@@ -16,7 +16,7 @@ public:
                      string major_param, int year_param, float GPA_param, float monthly_stipend_param, int employee_ID_param, string employer_param, string department_param,
                      string job_title_param, float monthly_salary_param);
     ~Student_Employee();
-    friend ostream& operator<<(ostream& out, const Student_Employee& student_employee);
+    friend ostream &operator <<(ostream &out, const Student_Employee &student_employee);
     void display_Info() const override;
 };
 

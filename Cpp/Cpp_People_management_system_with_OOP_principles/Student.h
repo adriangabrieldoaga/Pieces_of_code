@@ -26,7 +26,7 @@ public:
     ~Student();
 
     // Overload the << operator
-    friend ostream& operator<<(ostream& out, const Student& student);
+    friend ostream &operator <<(ostream &out, const Student &student);
 
     void display_Info() const override;
 };

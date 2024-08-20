@@ -21,7 +21,7 @@ Student::~Student()
 {
 }
 
-ostream& operator<<(std::ostream& out, const Student& student)
+ostream &operator <<(std::ostream &out, const Student &student)
 {
     out << "Name: " << student.first_name + " " + student.last_name << "\n" <<
             "Gender: " << student.gender << "\n" <<
