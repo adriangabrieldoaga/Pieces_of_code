@@ -23,22 +23,22 @@ Student_Employee::~Student_Employee()
 {
 }
 
-ostream &operator <<(std::ostream &out, const Student_Employee &student_employee)
+ostream &operator <<(std::ostream &out, const Student_Employee &s_e)
 {
-    out << "Name: " << student_employee.first_name + " " + student_employee.last_name << "\n" <<
-            "Gender: " << student_employee.gender << "\n" <<
-            "Age: " << student_employee.age << "\n" <<
-            "Occupation: Student, " << student_employee.job_title << "\n" <<
-            "Student ID: " << student_employee.student_ID << "\n" <<
-            "University: " << student_employee.university << "\n" <<
-            "School: " << student_employee.school << "\n" <<
-            "Major: " << student_employee.major << "\n" <<
-            "Year: " << student_employee.year << "\n" <<
-            "GPA: " << student_employee.GPA << "\n" <<
-            "Employee ID: " << student_employee.employee_ID << "\n" <<
-            "Employer: " << student_employee.employer << "\n" <<
-            "Department: " << student_employee.department << "\n" <<
-            "Monthly income: " << student_employee.monthly_stipend + student_employee.monthly_salary << "$\n\n";
+    out << "Name: " << s_e.first_name + " " + s_e.last_name << "\n" <<
+            "Gender: " << s_e.gender << "\n" <<
+            "Age: " << s_e.age << "\n" <<
+            "Occupation: Student, " << s_e.job_title << "\n" <<
+            "Student ID: " << s_e.student_ID << "\n" <<
+            "University: " << s_e.university << "\n" <<
+            "School: " << s_e.school << "\n" <<
+            "Major: " << s_e.major << "\n" <<
+            "Year: " << s_e.year << "\n" <<
+            "GPA: " << s_e.GPA << "\n" <<
+            "Employee ID: " << s_e.employee_ID << "\n" <<
+            "Employer: " << s_e.employer << "\n" <<
+            "Department: " << s_e.department << "\n" <<
+            "Monthly income: " << s_e.monthly_stipend + s_e.monthly_salary << "$\n\n";
     return out;
 }
 

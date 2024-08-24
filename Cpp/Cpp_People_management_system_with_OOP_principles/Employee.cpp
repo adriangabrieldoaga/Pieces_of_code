@@ -21,16 +21,16 @@ Employee::~Employee()
 {
 }
 
-ostream &operator <<(std::ostream &out, const Employee &employee)
+ostream &operator <<(std::ostream &out, const Employee &e)
 {
-    out << "Name: " << employee.first_name + " " + employee.last_name << "\n" <<
-            "Gender: " << employee.gender << "\n" <<
-            "Age: " << employee.age << "\n" <<
-            "Occupation: " << employee.job_title << "\n" <<
-            "Employee ID: " << employee.employee_ID << "\n" <<
-            "Employer: " << employee.employer << "\n" <<
-            "Department: " << employee.department << "\n" <<
-            "Monthly salary: " << employee.monthly_salary << "$\n\n";
+    out << "Name: " << e.first_name + " " + e.last_name << "\n" <<
+            "Gender: " << e.gender << "\n" <<
+            "Age: " << e.age << "\n" <<
+            "Occupation: " << e.job_title << "\n" <<
+            "Employee ID: " << e.employee_ID << "\n" <<
+            "Employer: " << e.employer << "\n" <<
+            "Department: " << e.department << "\n" <<
+            "Monthly salary: " << e.monthly_salary << "$\n\n";
     return out;
 }
 

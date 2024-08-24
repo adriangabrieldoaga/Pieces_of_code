@@ -22,7 +22,7 @@ public:
     Employee(string first_name_param, string last_name_param, string gender_param, int age_param, int employee_ID_param, string employer_param, string department_param,
              string job_title_param, float monthly_salary_param);
     ~Employee();
-    friend ostream &operator <<(ostream &out, const Employee &employee);
+    friend ostream &operator <<(ostream &out, const Employee &e);
     void display_Info() const override;
 };
 

@@ -21,19 +21,19 @@ Student::~Student()
 {
 }
 
-ostream &operator <<(std::ostream &out, const Student &student)
+ostream &operator <<(std::ostream &out, const Student &s)
 {
-    out << "Name: " << student.first_name + " " + student.last_name << "\n" <<
-            "Gender: " << student.gender << "\n" <<
-            "Age: " << student.age << "\n" <<
+    out << "Name: " << s.first_name + " " + s.last_name << "\n" <<
+            "Gender: " << s.gender << "\n" <<
+            "Age: " << s.age << "\n" <<
             "Occupation: Student\n" <<
-            "Student ID: " << student.student_ID << "\n" <<
-            "University: " << student.university << "\n" <<
-            "School: " << student.school << "\n" <<
-            "Major: " << student.major << "\n" <<
-            "Year: " << student.year << "\n" <<
-            "GPA: " << student.GPA << "\n" <<
-            "Monthly stipend: " << student.monthly_stipend << "$\n\n";
+            "Student ID: " << s.student_ID << "\n" <<
+            "University: " << s.university << "\n" <<
+            "School: " << s.school << "\n" <<
+            "Major: " << s.major << "\n" <<
+            "Year: " << s.year << "\n" <<
+            "GPA: " << s.GPA << "\n" <<
+            "Monthly stipend: " << s.monthly_stipend << "$\n\n";
     return out;
 }
 
